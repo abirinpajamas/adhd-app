@@ -1,8 +1,10 @@
 import { Ionicons } from "@expo/vector-icons";
 import { Stack } from "expo-router";
 import React, { useState } from "react";
+
 import {
   Dimensions,
+  Platform,
   SafeAreaView,
   ScrollView,
   StatusBar,
@@ -11,62 +13,94 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
+import ADHDAccelerometerCollector from "../ADHDAccelerometerCollector";
+
+import add from "../add.json";
+import asrs from "../asrs.json";
+import hads_d from "../hads_d.json";
+import madrs from "../madrs.json";
+import wurs from "../wurs.json";
+
+const allQuestions = [add, madrs, asrs, wurs, hads_d];
 
 // Get the screen width for responsive design
 const { width } = Dimensions.get("window");
 
 const QuestionScreen = () => {
+  const [isQuestionsComplete, setQuestionsComplete] = useState(false);
+  const [isSetComplete, setSetComplete] = useState(false);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
+  const [ans, setans] = useState<number[]>([]);
+  const [finalans, setfinalans] = useState<number[]>([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [Index, setIndex] = useState(0);
+  const [userAnswers, setUserAnswers] = useState<{
+    [key: string]: number | null;
+  }>({});
 
   // Hardcoded question data for demonstration
-  const question = {
-    category: "Cardiovascular",
-    required: true,
-    text: "During the past month, how often have you experienced chest pain or discomfort during physical activity?",
-    description:
-      "Please select the option that best describes your experience over the last 30 days.",
-    answers: [
-      {
-        id: "1",
-        text: "Never",
-        description: "No chest pain or discomfort",
-        tag: "Normal",
-        color: "#10b981",
-      },
-      {
-        id: "2",
-        text: "Rarely (1-2 times)",
-        description: "Very occasional episodes",
-        tag: "Low",
-        color: "#f59e0b",
-      },
-      {
-        id: "3",
-        text: "Sometimes (3-5 times)",
-        description: "Occasional discomfort",
-        tag: "Moderate",
-        color: "#ef4444",
-      },
-      {
-        id: "4",
-        text: "Often (6+ times)",
-        description: "Frequent discomfort",
-        tag: "High",
-        color: "#b91c1c",
-      },
-      {
-        id: "5",
-        text: "I prefer not to say",
-        description: "",
-        tag: "",
-        color: "#6b7280",
-      },
-    ],
+  const question = allQuestions[Index].questions;
+  const fques = question[currentIndex];
+
+  const handlenext = async () => {
+    if (Index === 2) {
+      setans((prevans) => [...prevans, parseInt(selectedAnswer ?? "0") - 1]);
+    } else {
+      setans((prevans) => [...prevans, parseInt(selectedAnswer ?? "0")]);
+    }
+    setSelectedAnswer(null);
+
+    if (currentIndex < question.length - 1) {
+      setCurrentIndex(currentIndex + 1);
+    } else {
+      setCurrentIndex(0);
+
+      let sum: number;
+      if (Index === 0) {
+        sum = parseInt(selectedAnswer ?? "0");
+      } else {
+        sum = ans.reduce(
+          (accumulator, currentValue) => accumulator + currentValue,
+          0
+        );
+      }
+      setfinalans((prevAnswers) => [...prevAnswers, sum]);
+      //setSetComplete(true);
+      setans([]); // Reset ans for the next set of questions
+
+      console.log(Index);
+      if (allQuestions.length === Index + 1) {
+        /*try {
+          const jsonValue = JSON.stringify(finalans);
+          await AsyncStorage.setItem("@final_answers_key", jsonValue);
+          console.log("Final answers saved successfully!");
+        } catch (e) {
+          console.error("Failed to save final answers:", e);
+        }*/
+
+        setQuestionsComplete(true);
+      } else {
+        setIndex(Index + 1);
+      }
+    }
   };
+
+  const handleprev = () => {
+    if (currentIndex > 0) {
+      setCurrentIndex(currentIndex - 1);
+    }
+    setans((prevans) => prevans.slice(0, -1));
+  };
+  console.log(ans);
+
+  console.log(question.length);
+  console.log(finalans);
 
   const isAnswerSelected = selectedAnswer !== null;
 
-  return (
+  return isQuestionsComplete ? (
+    <ADHDAccelerometerCollector />
+  ) : (
     <SafeAreaView style={styles.safeArea}>
       <Stack.Screen
         options={{
@@ -75,22 +109,33 @@ const QuestionScreen = () => {
       />
       <View style={styles.container}>
         <StatusBar barStyle="dark-content" />
-        {/* Header Section */}
 
-        {/* Progress Bar and Question Number */}
         <View style={styles.progressContainer}>
-          <Text style={styles.questionNumber}>Question 8 of 25</Text>
+          <Text style={styles.questionNumber}>
+            Question {currentIndex + 1} of {question.length}
+          </Text>
           <View style={styles.progressBarWrapper}>
-            <View style={styles.progressBarFill} />
+            <View
+              style={{
+                ...styles.progressBarFill,
+                width: `${Math.round(
+                  ((currentIndex + 1) / question.length) * 100
+                )}%`,
+              }}
+            />
           </View>
-          <Text style={styles.progressText}>32%</Text>
+          <Text style={styles.progressText}>
+            {Math.round(((currentIndex + 1) / question.length) * 100)}%
+          </Text>
         </View>
 
         <ScrollView style={styles.scrollView}>
           {/* Tags */}
           <View style={styles.tagsContainer}>
-            <View style={[styles.tag, styles.cardioTag]}>
-              <Text style={styles.tagText}>Cardiovascular</Text>
+            <View style={[styles.tag, styles.requiredTag]}>
+              <Text style={styles.tagText}>
+                {fques.id.slice(0, -1).toUpperCase()} Questionnaire
+              </Text>
             </View>
             <View style={[styles.tag, styles.requiredTag]}>
               <Text style={styles.tagText}>Required</Text>
@@ -99,22 +144,22 @@ const QuestionScreen = () => {
 
           {/* Question and Description */}
           <View style={styles.questionSection}>
-            <Text style={styles.questionText}>{question.text}</Text>
-            <Text style={styles.questionDescription}>
-              {question.description}
-            </Text>
+            <Text style={styles.questionText}>{fques.text}</Text>
+            <Text style={styles.questionDescription}>{fques.description}</Text>
           </View>
 
           {/* Answer Options */}
           <View style={styles.answersContainer}>
-            {question.answers.map((answer) => (
+            {fques.answers.map((answer) => (
               <TouchableOpacity
                 key={answer.id}
                 style={[
                   styles.answerCard,
                   selectedAnswer === answer.id && styles.selectedAnswerCard,
                 ]}
-                onPress={() => setSelectedAnswer(answer.id)}
+                onPress={() => {
+                  setSelectedAnswer(answer.id);
+                }}
               >
                 <View style={styles.radioContainer}>
                   <View
@@ -135,11 +180,11 @@ const QuestionScreen = () => {
                 </View>
                 <View style={styles.answerTextContainer}>
                   <Text style={styles.answerText}>{answer.text}</Text>
-                  {answer.description.length > 0 && (
+                  {/*{answer.description.length > 0 && (
                     <Text style={styles.answerDescription}>
                       {answer.description}
                     </Text>
-                  )}
+                  )}*/}
                 </View>
                 {answer.tag.length > 0 && (
                   <View
@@ -158,50 +203,30 @@ const QuestionScreen = () => {
               </TouchableOpacity>
             ))}
           </View>
-
-          {/* Important Notice */}
-          <View style={styles.importantBox}>
-            <Ionicons
-              name="information-circle-outline"
-              size={24}
-              color="#1976d2"
-            />
-            <View style={styles.importantTextContainer}>
-              <Text style={styles.importantTitle}>Important</Text>
-              <Text style={styles.importantText}>
-                If you’re experiencing chest pain now, please seek immediate
-                medical attention.
-              </Text>
-            </View>
-          </View>
         </ScrollView>
 
         {/* Footer Navigation */}
         <View style={styles.footer}>
-          <TouchableOpacity style={styles.footerButton}>
+          <TouchableOpacity
+            style={styles.footerButton}
+            //disabled={!isAnswerSelected}
+            onPress={handleprev}
+          >
             <Ionicons name="chevron-back" size={20} color="#333" />
             <Text style={styles.footerButtonText}>Previous</Text>
           </TouchableOpacity>
-          <View style={styles.pagination}>
-            {Array.from({ length: 8 }).map((_, index) => (
-              <View
-                key={index}
-                style={[
-                  styles.paginationDot,
-                  index < 4 && styles.paginationDotActive,
-                  index === 4 && styles.paginationDotCurrent,
-                ]}
-              />
-            ))}
-          </View>
+
           <TouchableOpacity
             style={[
               styles.nextButton,
               !isAnswerSelected && styles.disabledButton,
             ]}
             disabled={!isAnswerSelected}
+            onPress={handlenext}
           >
-            <Text style={styles.nextButtonText}>Next</Text>
+            <Text style={styles.nextButtonText}>
+              {currentIndex === question.length - 1 ? "Finish" : "Next"}
+            </Text>
             <Ionicons name="chevron-forward" size={20} color="white" />
           </TouchableOpacity>
         </View>
@@ -218,6 +243,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#f4f6f8",
+    marginTop: Platform.OS === "ios" ? 0 : StatusBar.currentHeight,
   },
   scrollView: {
     paddingHorizontal: 20,

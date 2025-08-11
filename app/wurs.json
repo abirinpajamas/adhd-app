@@ -1,0 +1,2261 @@
+{
+  "questions": [
+    {
+      "id": "wurs1",
+      "required": true,
+      "text": "Active, restless, always on the go",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs2",
+      "required": true,
+      "text": "Afraid of things",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs3",
+      "required": true,
+      "text": "Concentration problems, easily distracted",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs4",
+      "required": true,
+      "text": "Anxious, worrying",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs5",
+      "required": true,
+      "text": "Nervous, fidgety",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs6",
+      "required": true,
+      "text": "Inattentive, daydreaming",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs7",
+      "required": true,
+      "text": "Hot- or short-tempered, low boiling point",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs8",
+      "required": true,
+      "text": "Shy, sensitive",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs9",
+      "required": true,
+      "text": "Temper outbursts, tantrums",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs10",
+      "required": true,
+      "text": "Trouble with stick-to-it-tiveness, not following through. Failing to finish things started",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs11",
+      "required": true,
+      "text": "Stubborn, strong-willed",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs12",
+      "required": true,
+      "text": "Sad or blue, depressed, unhappy",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs13",
+      "required": true,
+      "text": "Incautious, dare-devilish, involved in pranks",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs14",
+      "required": true,
+      "text": "Not getting a kick out of things, dissatisfied with life",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs15",
+      "required": true,
+      "text": "Disobedient with parents, rebellious, sassy",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs16",
+      "required": true,
+      "text": "Low opinion of myself",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs17",
+      "required": true,
+      "text": "Irritable",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs18",
+      "required": true,
+      "text": "Outgoing, friendly, enjoyed company of people",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs19",
+      "required": true,
+      "text": "Sloppy, disorganized",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs20",
+      "required": true,
+      "text": "Moody, ups and downs",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs21",
+      "required": true,
+      "text": "Angry",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs22",
+      "required": true,
+      "text": "Friends, popular",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs23",
+      "required": true,
+      "text": "Well-organized, tidy, neat",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs24",
+      "required": true,
+      "text": "Acting without thinking, impulsive",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs25",
+      "required": true,
+      "text": "Tendency to be immature",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs26",
+      "required": true,
+      "text": "Guilty feelings, regretful",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs27",
+      "required": true,
+      "text": "Losing control of myself",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs28",
+      "required": true,
+      "text": "Tendency to be or act irrational",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs29",
+      "required": true,
+      "text": "Unpopular with other children, didn't keep friends for long, didn't get along with other children",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs30",
+      "required": true,
+      "text": "Poorly coordinated, did not participate in sports",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs31",
+      "required": true,
+      "text": "Afraid of losing control of self",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs32",
+      "required": true,
+      "text": "Well-coordinated, picked first in games",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs33",
+      "required": true,
+      "text": "Tomboyish (for women only)",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs34",
+      "required": true,
+      "text": "Running away from home",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs35",
+      "required": true,
+      "text": "Getting into fights",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs36",
+      "required": true,
+      "text": "Teasing other children",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs37",
+      "required": true,
+      "text": "Leader, bossy",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs38",
+      "required": true,
+      "text": "Difficulty getting awake",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs39",
+      "required": true,
+      "text": "Follower, led around too much",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs40",
+      "required": true,
+      "text": "Trouble seeing things from someone else's point of view",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs41",
+      "required": true,
+      "text": "Trouble with authorities, trouble with school, visits to principal's office",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs42",
+      "required": true,
+      "text": "Trouble with police, booked convicted",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs43",
+      "required": true,
+      "text": "Headaches",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs44",
+      "required": true,
+      "text": "Stomachaches",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs45",
+      "required": true,
+      "text": "Constipation",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs46",
+      "required": true,
+      "text": "Diarrhea",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs47",
+      "required": true,
+      "text": "Food allergies",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs48",
+      "required": true,
+      "text": "Other allergies",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs49",
+      "required": true,
+      "text": "Bedwetting",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs50",
+      "required": true,
+      "text": "Overall a good student, fast",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs51",
+      "required": true,
+      "text": "Overall a poor student, slow learner",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs52",
+      "required": true,
+      "text": "Slow in learning to read",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs53",
+      "required": true,
+      "text": "Slow reader",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs54",
+      "required": true,
+      "text": "Trouble reversing letters",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs55",
+      "required": true,
+      "text": "Problems with spelling",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs56",
+      "required": true,
+      "text": "Trouble with mathematics or numbers",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs57",
+      "required": true,
+      "text": "Bad handwriting",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs58",
+      "required": true,
+      "text": "Able to read pretty well but never really enjoyed reading",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs59",
+      "required": true,
+      "text": "Not achieving up to potential",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs60",
+      "required": true,
+      "text": "Repeating grades",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "wurs61",
+      "required": true,
+      "text": "Suspended or expelled",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all or very slightly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Mildly",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Moderately",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Quite a bit",
+          "tag": "WURS",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Very much",
+          "tag": "WURS",
+          "color": "#10b981"
+        }
+      ]
+    }
+  ]
+}

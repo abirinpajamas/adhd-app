@@ -1,0 +1,670 @@
+{
+  "questions": [
+    {
+      "id": "asrs1",
+      "required": true,
+      "text": "How often do you have trouble wrapping up the final details of a project, once the challenging parts have been done?",
+      "answers": [
+        {
+          "id": "1",
+          "text": "Never",
+          "tag": "Part A",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Rarely",
+          "tag": "Part A",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Sometimes",
+          "tag": "Part A",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Often",
+          "tag": "Part A",
+          "color": "#10b981"
+        },
+        {
+          "id": "5",
+          "text": "Very Often",
+          "tag": "Part A",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "asrs2",
+      "required": true,
+      "text": "How often do you have difficulty getting things in order when you have to do a task that requires organization?",
+      "answers": [
+        {
+          "id": "1",
+          "text": "Never",
+          "tag": "Part A",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Rarely",
+          "tag": "Part A",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Sometimes",
+          "tag": "Part A",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Often",
+          "tag": "Part A",
+          "color": "#10b981"
+        },
+        {
+          "id": "5",
+          "text": "Very Often",
+          "tag": "Part A",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "asrs3",
+      "required": true,
+      "text": "How often do you have problems remembering appointments or obligations?",
+      "answers": [
+        {
+          "id": "1",
+          "text": "Never",
+          "tag": "Part A",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Rarely",
+          "tag": "Part A",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Sometimes",
+          "tag": "Part A",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Often",
+          "tag": "Part A",
+          "color": "#10b981"
+        },
+        {
+          "id": "5",
+          "text": "Very Often",
+          "tag": "Part A",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "asrs4",
+      "required": true,
+      "text": "When you have a task that requires a lot of thought, how often do you avoid or delay getting started?",
+      "answers": [
+        {
+          "id": "1",
+          "text": "Never",
+          "tag": "Part A",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Rarely",
+          "tag": "Part A",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Sometimes",
+          "tag": "Part A",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Often",
+          "tag": "Part A",
+          "color": "#10b981"
+        },
+        {
+          "id": "5",
+          "text": "Very Often",
+          "tag": "Part A",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "asrs5",
+      "required": true,
+      "text": "How often do you fidget or squirm with your hands or feet when you have to sit down for a long time?",
+      "answers": [
+        {
+          "id": "1",
+          "text": "Never",
+          "tag": "Part A",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Rarely",
+          "tag": "Part A",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Sometimes",
+          "tag": "Part A",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Often",
+          "tag": "Part A",
+          "color": "#10b981"
+        },
+        {
+          "id": "5",
+          "text": "Very Often",
+          "tag": "Part A",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "asrs6",
+      "required": true,
+      "text": "How often do you feel overly active and compelled to do things, like you were driven by a motor?",
+      "answers": [
+        {
+          "id": "1",
+          "text": "Never",
+          "tag": "Part A",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Rarely",
+          "tag": "Part A",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Sometimes",
+          "tag": "Part A",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Often",
+          "tag": "Part A",
+          "color": "#10b981"
+        },
+        {
+          "id": "5",
+          "text": "Very Often",
+          "tag": "Part A",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "asrs7",
+      "required": true,
+      "text": "How often do you make careless mistakes when you have to work on a boring or difficult project?",
+      "answers": [
+        {
+          "id": "1",
+          "text": "Never",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Rarely",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Sometimes",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Often",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "5",
+          "text": "Very Often",
+          "tag": "Part B",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "asrs8",
+      "required": true,
+      "text": "How often do you have difficulty keeping your attention when you are doing boring or repetitive work?",
+      "answers": [
+        {
+          "id": "1",
+          "text": "Never",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Rarely",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Sometimes",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Often",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "5",
+          "text": "Very Often",
+          "tag": "Part B",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "asrs9",
+      "required": true,
+      "text": "How often do you have difficulty concentrating on what people say to you, even when they are speaking to you directly?",
+      "answers": [
+        {
+          "id": "1",
+          "text": "Never",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Rarely",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Sometimes",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Often",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "5",
+          "text": "Very Often",
+          "tag": "Part B",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "asrs10",
+      "required": true,
+      "text": "How often do you misplace or have difficulty finding things at home or at work?",
+      "answers": [
+        {
+          "id": "1",
+          "text": "Never",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Rarely",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Sometimes",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Often",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "5",
+          "text": "Very Often",
+          "tag": "Part B",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "asrs11",
+      "required": true,
+      "text": "How often are you distracted by activity or noise around you?",
+      "answers": [
+        {
+          "id": "1",
+          "text": "Never",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Rarely",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Sometimes",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Often",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "5",
+          "text": "Very Often",
+          "tag": "Part B",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "asrs12",
+      "required": true,
+      "text": "How often do you leave your seat in meetings or other situations in which you are expected to remain seated?",
+      "answers": [
+        {
+          "id": "1",
+          "text": "Never",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Rarely",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Sometimes",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Often",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "5",
+          "text": "Very Often",
+          "tag": "Part B",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "asrs13",
+      "required": true,
+      "text": "How often do you feel restless or fidgety?",
+      "answers": [
+        {
+          "id": "1",
+          "text": "Never",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Rarely",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Sometimes",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Often",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "5",
+          "text": "Very Often",
+          "tag": "Part B",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "asrs14",
+      "required": true,
+      "text": "How often do you have difficulty unwinding and relaxing when you have time to yourself?",
+      "answers": [
+        {
+          "id": "1",
+          "text": "Never",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Rarely",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Sometimes",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Often",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "5",
+          "text": "Very Often",
+          "tag": "Part B",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "asrs15",
+      "required": true,
+      "text": "How often do you find yourself talking too much when you are in social situations?",
+      "answers": [
+        {
+          "id": "1",
+          "text": "Never",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Rarely",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Sometimes",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Often",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "5",
+          "text": "Very Often",
+          "tag": "Part B",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "asrs16",
+      "required": true,
+      "text": "When you’re in a conversation, how often do you find yourself finishing the sentences of the people you are talking to, before they can finish them themselves?",
+      "answers": [
+        {
+          "id": "1",
+          "text": "Never",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Rarely",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Sometimes",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Often",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "5",
+          "text": "Very Often",
+          "tag": "Part B",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "asrs17",
+      "required": true,
+      "text": "How often do you have difficulty waiting your turn in situations when turn taking is required?",
+      "answers": [
+        {
+          "id": "1",
+          "text": "Never",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Rarely",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Sometimes",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Often",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "5",
+          "text": "Very Often",
+          "tag": "Part B",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "asrs18",
+      "required": true,
+      "text": "How often do you interrupt others when they are busy?",
+      "answers": [
+        {
+          "id": "1",
+          "text": "Never",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Rarely",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Sometimes",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "4",
+          "text": "Often",
+          "tag": "Part B",
+          "color": "#10b981"
+        },
+        {
+          "id": "5",
+          "text": "Very Often",
+          "tag": "Part B",
+          "color": "#10b981"
+        }
+      ]
+    }
+  ]
+}

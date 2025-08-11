@@ -1,61 +1,51 @@
 import React from "react";
-import {
-  Platform,
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  View,
-} from "react-native";
-
-/*type AssessmentResultScreenProps = {
-  onGoBack: () => void;
-};*/
-
-import { useLocalSearchParams } from "expo-router";
+import { SafeAreaView, ScrollView, StyleSheet, Text, View } from "react-native";
 
 const AssessmentResultScreen = () => {
-  const { prediction } = useLocalSearchParams();
-
-  let overallScore = "";
-  if (prediction === "1") {
-    overallScore = "You have a high possibilty of having ADHD";
-  } else if (prediction === "0") {
-    overallScore = "You do not posses the indicators of having ADHD";
-  }
+  const overallScore = 42;
   const totalScore = 72;
   const riskLevel = "Moderate Risk";
   const riskDescription =
     "Your responses suggest moderate symptoms that warrant professional evaluation.";
   const categoryBreakdown = [
-    { name: "ASRS", score: 0, total: 24, color: "red" },
-    { name: "WURS", score: 0, total: 20, color: "orange" },
-    { name: "MADRS", score: 0, total: 16, color: "green" },
-    { name: "HAD-S", score: 0, total: 12, color: "lightblue" },
+    { name: "Cardiovascular", score: 18, total: 24, color: "red" },
+    { name: "Respiratory", score: 12, total: 20, color: "orange" },
+    { name: "Neurological", score: 8, total: 16, color: "green" },
+    { name: "General Health", score: 4, total: 12, color: "lightblue" },
   ];
 
   return (
     <SafeAreaView style={styles.safeArea}>
       <ScrollView style={styles.container}>
         <View style={styles.header}>
-          {/* <TouchableOpacity style={styles.cross} onPress={onGoBack}>
-            <Entypo name="circle-with-cross" size={24} color="black" />
-          </TouchableOpacity>*/}
+          {/* Replace with your checkmark icon */}
           <View style={styles.checkmarkCircle}>
             <Text style={styles.checkmark}>✓</Text>
           </View>
           <Text style={styles.title}>Assessment Complete</Text>
           <Text style={styles.subtitle}>
-            Your ADHD screening results are ready
+            Your health screening results are ready
           </Text>
         </View>
 
         <View style={styles.overallScoreCard}>
+          <Text style={styles.overallScoreLabel}>Overall Score</Text>
           <View style={styles.riskBadge}>
-            <Text style={styles.riskBadgeText}>ML Model Prediction</Text>
+            <Text style={styles.riskBadgeText}>{riskLevel}</Text>
           </View>
-          <Text style={styles.score}>{overallScore}</Text>
+          <Text style={styles.score}>
+            {overallScore}/{totalScore}
+          </Text>
+          <Text style={styles.assessmentScoreLabel}>Assessment Score</Text>
+          <View style={styles.progressBarBackground}>
+            <View
+              style={[
+                styles.progressBarFill,
+                { width: `${(overallScore / totalScore) * 100}%` },
+              ]}
+            />
+          </View>
+          <Text style={styles.riskDescription}>{riskDescription}</Text>
         </View>
 
         <View style={styles.categoryBreakdownCard}>
@@ -99,7 +89,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    marginTop: Platform.OS === "ios" ? 0 : StatusBar.currentHeight,
   },
   header: {
     alignItems: "center",
@@ -111,15 +100,6 @@ const styles = StyleSheet.create({
     width: 60,
     height: 60,
     justifyContent: "center",
-    alignItems: "center",
-    marginBottom: 10,
-  },
-  cross: {
-    backgroundColor: "#e6f9e6", // Light green background
-    borderRadius: 30,
-    width: 40,
-    height: 60,
-    justifyContent: "flex-end",
     alignItems: "center",
     marginBottom: 10,
   },
@@ -174,7 +154,6 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     color: "#333",
     marginBottom: 5,
-    justifyContent: "center",
   },
   assessmentScoreLabel: {
     fontSize: 14,

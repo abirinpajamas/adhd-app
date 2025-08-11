@@ -1,6 +1,9 @@
 import { Ionicons } from "@expo/vector-icons";
 import React, { useState } from "react";
+
+import { useRouter } from "expo-router";
 import {
+  ScrollView,
   StatusBar,
   StyleSheet,
   Text,
@@ -13,127 +16,227 @@ export default function HomeScreen() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
+  const [isManual, setIsManual] = useState(false);
+  const [jsoninput, setjsoninput] = useState("");
 
+  const router = useRouter();
   // This is a placeholder for the login logic
   const handleSignIn = () => {
     console.log("Signing in with:", email, password);
     // Here you would add your actual authentication logic
   };
 
+  const handlesignup = () => {
+    router.push("/signup");
+  };
+  const handlemanual = async () => {
+    if (!jsoninput.trim()) {
+      console.error("Input is empty");
+      alert("Please enter some input before submitting");
+      return;
+    }
+
+    console.log(typeof jsoninput, jsoninput.length);
+    console.log(jsoninput);
+    try {
+      // Try to parse the input as JSON if it looks like JSON
+      let processedInput = jsoninput.trim();
+
+      // If input starts with { or [, try to parse it as JSON
+      if (processedInput.startsWith("{") || processedInput.startsWith("[")) {
+        try {
+          processedInput = JSON.parse(processedInput);
+          console.log("Parsed as JSON:", processedInput);
+        } catch (parseError) {
+          console.log(
+            "Input is not valid JSON, sending as string:",
+            parseError.message
+          );
+          // Keep as string if JSON parsing fails
+        }
+      }
+
+      //const requestBody = { input: processedInput };
+      //console.log("Request body:", JSON.stringify(requestBody));
+
+      const response = await fetch(
+        "https://model-deployment-aejf.onrender.com/predict",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(processedInput),
+        }
+      );
+
+      console.log("Response status:", response.status);
+      console.log("Response headers:", response.headers);
+
+      if (response.ok) {
+        const result = await response.json();
+        console.log("API Response:", result);
+        const classResult = result.class[0];
+        console.log("Class Result:", classResult);
+
+        router.push({
+          pathname: "/results", // or whatever your result screen route is
+          params: {
+            prediction: classResult,
+          },
+        });
+      } else {
+        const errorData = await response.text();
+        console.error("API Error:", response.status, errorData);
+      }
+    } catch (error) {
+      console.error("Network Error:", error);
+    } finally {
+      //setIsLoading(false);
+    }
+  };
+
+  const handlegoback = () => {
+    setIsManual(false);
+  };
+
   return (
-    <View style={styles.container}>
-      <StatusBar barStyle="light-content" />
-      <View style={styles.header}>
-        <Ionicons
-          name="medkit-outline"
-          size={50}
-          color="white"
-          style={styles.appIcon}
-        />
-        <Text style={styles.appName}>findADHD </Text>
-        <Text style={styles.appSubtitle}>Your ADHD screening companion</Text>
-        <View style={styles.securityBadges}>
-          <View style={styles.badge}>
-            <Ionicons name="shield-checkmark-outline" size={16} color="white" />
-            <Text style={styles.badgeText}>Secure</Text>
-          </View>
-          <View style={styles.badge}>
-            <Ionicons name="lock-closed-outline" size={16} color="white" />
-            <Text style={styles.badgeText}>HIPAA</Text>
-          </View>
-        </View>
-      </View>
-
-      <View style={styles.content}>
-        <Text style={styles.welcomeText}>Welcome</Text>
-        <Text style={styles.signInText}>Sign in to record your assessment</Text>
-
-        <View style={styles.inputContainer}>
-          <Text style={styles.label}>Email</Text>
-          <View style={styles.inputWrapper}>
-            <Ionicons
-              name="mail-outline"
-              size={20}
-              color="#888"
-              style={styles.inputIcon}
-            />
-            <TextInput
-              style={styles.input}
-              placeholder="Enter your email"
-              value={email}
-              onChangeText={setEmail}
-              keyboardType="email-address"
-            />
+    <ScrollView>
+      <View style={styles.container}>
+        <StatusBar barStyle="light-content" />
+        <View style={styles.header}>
+          <Ionicons
+            name="medkit-outline"
+            size={50}
+            color="white"
+            style={styles.appIcon}
+          />
+          <Text style={styles.appName}>findADHD </Text>
+          <Text style={styles.appSubtitle}>Your ADHD screening companion</Text>
+          <View style={styles.securityBadges}>
+            <View style={styles.badge}>
+              <Ionicons
+                name="shield-checkmark-outline"
+                size={16}
+                color="white"
+              />
+              <Text style={styles.badgeText}>Secure</Text>
+            </View>
+            <View style={styles.badge}>
+              <Ionicons name="lock-closed-outline" size={16} color="white" />
+              <Text style={styles.badgeText}>HIPAA</Text>
+            </View>
           </View>
         </View>
 
-        <View style={styles.inputContainer}>
-          <Text style={styles.label}>Password</Text>
-          <View style={styles.inputWrapper}>
-            <Ionicons
-              name="lock-closed-outline"
-              size={20}
-              color="#888"
-              style={styles.inputIcon}
-            />
-            <TextInput
-              style={styles.input}
-              placeholder="Enter your password"
-              value={password}
-              onChangeText={setPassword}
-              secureTextEntry={true}
-            />
-            <TouchableOpacity style={styles.eyeIcon}>
-              <Ionicons name="eye-outline" size={20} color="#888" />
+        <View style={styles.content}>
+          <Text style={styles.welcomeText}>Welcome</Text>
+          <Text style={styles.signInText}>
+            Sign in to record your assessment
+          </Text>
+
+          <View style={styles.inputContainer}>
+            <Text style={styles.label}>Email</Text>
+            <View style={styles.inputWrapper}>
+              <Ionicons
+                name="mail-outline"
+                size={20}
+                color="#888"
+                style={styles.inputIcon}
+              />
+              <TextInput
+                style={styles.input}
+                placeholder="Enter your email"
+                value={email}
+                onChangeText={setEmail}
+                keyboardType="email-address"
+              />
+            </View>
+          </View>
+
+          <View style={styles.inputContainer}>
+            <Text style={styles.label}>Password</Text>
+            <View style={styles.inputWrapper}>
+              <Ionicons
+                name="lock-closed-outline"
+                size={20}
+                color="#888"
+                style={styles.inputIcon}
+              />
+              <TextInput
+                style={styles.input}
+                placeholder="Enter your password"
+                value={password}
+                onChangeText={setPassword}
+                secureTextEntry={true}
+              />
+              <TouchableOpacity style={styles.eyeIcon}>
+                <Ionicons name="eye-outline" size={20} color="#888" />
+              </TouchableOpacity>
+            </View>
+          </View>
+
+          <View style={styles.rememberForgotPassword}>
+            <TouchableOpacity
+              style={styles.rememberMeContainer}
+              onPress={() => setRememberMe(!rememberMe)}
+            >
+              <Ionicons
+                name={rememberMe ? "checkbox" : "square-outline"}
+                size={20}
+                color="#333"
+                style={styles.checkbox}
+              />
+              <Text style={styles.rememberMeText}>Remember me</Text>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <Text style={styles.forgotPasswordText}>Forgot password?</Text>
+            </TouchableOpacity>
+          </View>
+
+          <TouchableOpacity style={styles.signInButton} onPress={handleSignIn}>
+            <Text style={styles.signInButtonText}>Sign In</Text>
+          </TouchableOpacity>
+
+          <View style={styles.divider}>
+            <View style={styles.dividerLine} />
+            <Text style={styles.orText}>or</Text>
+            <View style={styles.dividerLine} />
+          </View>
+
+          <View style={styles.socialLogin}>
+            <TouchableOpacity style={styles.socialButton}>
+              <Ionicons name="logo-google" size={24} color="#4285F4" />
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.socialButton}>
+              <Ionicons name="logo-apple" size={24} color="#000" />
+            </TouchableOpacity>
+          </View>
+
+          <View style={styles.signUpContainer}>
+            <Text style={styles.dontHaveAccountText}>
+              Don’t have an account?
+            </Text>
+            <TouchableOpacity onPress={handlesignup}>
+              <Text style={styles.signUpLink}>Sign up</Text>
             </TouchableOpacity>
           </View>
         </View>
-
-        <View style={styles.rememberForgotPassword}>
-          <TouchableOpacity
-            style={styles.rememberMeContainer}
-            onPress={() => setRememberMe(!rememberMe)}
-          >
-            <Ionicons
-              name={rememberMe ? "checkbox" : "square-outline"}
-              size={20}
-              color="#333"
-              style={styles.checkbox}
-            />
-            <Text style={styles.rememberMeText}>Remember me</Text>
-          </TouchableOpacity>
-          <TouchableOpacity>
-            <Text style={styles.forgotPasswordText}>Forgot password?</Text>
-          </TouchableOpacity>
-        </View>
-
-        <TouchableOpacity style={styles.signInButton} onPress={handleSignIn}>
-          <Text style={styles.signInButtonText}>Sign In</Text>
+        <TouchableOpacity onPress={handlemanual}>
+          <Text style={styles.cal}>Calculate Manually</Text>
         </TouchableOpacity>
-
-        <View style={styles.divider}>
-          <View style={styles.dividerLine} />
-          <Text style={styles.orText}>or</Text>
-          <View style={styles.dividerLine} />
-        </View>
-
-        <View style={styles.socialLogin}>
-          <TouchableOpacity style={styles.socialButton}>
-            <Ionicons name="logo-google" size={24} color="#4285F4" />
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.socialButton}>
-            <Ionicons name="logo-apple" size={24} color="#000" />
-          </TouchableOpacity>
-        </View>
-
-        <View style={styles.signUpContainer}>
-          <Text style={styles.dontHaveAccountText}>Don’t have an account?</Text>
-          <TouchableOpacity>
-            <Text style={styles.signUpLink}>Sign up</Text>
-          </TouchableOpacity>
-        </View>
+        <TextInput
+          placeholder="Enter your calculation"
+          style={styles.input}
+          value={jsoninput}
+          onChangeText={setjsoninput}
+          multiline={true}
+          scrollEnabled={true}
+          maxLength={1000000000000}
+        />
       </View>
-    </View>
+    </ScrollView>
   );
 }
 
@@ -247,7 +350,7 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   rememberForgotPassword: {
-    flexDirection: "row",
+    //flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
     marginBottom: 20,
@@ -315,5 +418,11 @@ const styles = StyleSheet.create({
   signUpLink: {
     color: "#1976d2",
     fontWeight: "bold",
+  },
+  cal: {
+    color: "#1976d2",
+    fontWeight: "bold",
+    justifyContent: "center",
+    alignItems: "center",
   },
 });

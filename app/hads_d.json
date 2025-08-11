@@ -1,0 +1,228 @@
+{
+  "questions": [
+    {
+      "id": "hadsd1",
+      "required": true,
+      "text": "I still enjoy the things I used to enjoy.",
+      "description": "Please select the option that best describes how you have felt over the past week.",
+      "answers": [
+        {
+          "id": "3",
+          "text": "Definitely as much",
+          "tag": "HADS-D",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Not quite so much",
+          "tag": "HADS-D",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Only a little",
+          "tag": "HADS-D",
+          "color": "#10b981"
+        },
+        {
+          "id": "0",
+          "text": "Hardly at all",
+          "tag": "HADS-D",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "hadsd2",
+      "required": true,
+      "text": "I can laugh and see the funny side of things.",
+      "description": "Please select the option that best describes how you have felt over the past week.",
+      "answers": [
+        {
+          "id": "3",
+          "text": "As much as I always could",
+          "tag": "HADS-D",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Not quite so much now",
+          "tag": "HADS-D",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Only a little",
+          "tag": "HADS-D",
+          "color": "#10b981"
+        },
+        {
+          "id": "0",
+          "text": "Not at all",
+          "tag": "HADS-D",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "hadsd3",
+      "required": true,
+      "text": "I feel cheerful.",
+      "description": "Please select the option that best describes how you have felt over the past week.",
+      "answers": [
+        {
+          "id": "3",
+          "text": "Not at all",
+          "tag": "HADS-D",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Not often",
+          "tag": "HADS-D",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Sometimes",
+          "tag": "HADS-D",
+          "color": "#10b981"
+        },
+        {
+          "id": "0",
+          "text": "Most of the time",
+          "tag": "HADS-D",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "hadsd4",
+      "required": true,
+      "text": "I feel as if I am slowed down.",
+      "description": "Please select the option that best describes how you have felt over the past week.",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all",
+          "tag": "HADS-D",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Slightly",
+          "tag": "HADS-D",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Very much",
+          "tag": "HADS-D",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Nearly all the time",
+          "tag": "HADS-D",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "hadsd5",
+      "required": true,
+      "text": "I have lost interest in my appearance.",
+      "description": "Please select the option that best describes how you have felt over the past week.",
+      "answers": [
+        {
+          "id": "0",
+          "text": "Not at all",
+          "tag": "HADS-D",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Slightly",
+          "tag": "HADS-D",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "A good deal",
+          "tag": "HADS-D",
+          "color": "#10b981"
+        },
+        {
+          "id": "3",
+          "text": "Completely",
+          "tag": "HADS-D",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "hadsd6",
+      "required": true,
+      "text": "I look forward with enjoyment to things.",
+      "description": "Please select the option that best describes how you have felt over the past week.",
+      "answers": [
+        {
+          "id": "3",
+          "text": "As much as I ever did",
+          "tag": "HADS-D",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Rather less than I used to",
+          "tag": "HADS-D",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Only a little",
+          "tag": "HADS-D",
+          "color": "#10b981"
+        },
+        {
+          "id": "0",
+          "text": "Hardly at all",
+          "tag": "HADS-D",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "id": "hadsd7",
+      "required": true,
+      "text": "I can enjoy a good book or radio or TV program.",
+      "description": "Please select the option that best describes how you have felt over the past week.",
+      "answers": [
+        {
+          "id": "3",
+          "text": "Often",
+          "tag": "HADS-D",
+          "color": "#10b981"
+        },
+        {
+          "id": "2",
+          "text": "Sometimes",
+          "tag": "HADS-D",
+          "color": "#10b981"
+        },
+        {
+          "id": "1",
+          "text": "Seldom",
+          "tag": "HADS-D",
+          "color": "#10b981"
+        },
+        {
+          "id": "0",
+          "text": "Very seldom",
+          "tag": "HADS-D",
+          "color": "#10b981"
+        }
+      ]
+    }
+  ]
+}

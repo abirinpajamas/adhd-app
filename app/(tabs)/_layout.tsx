@@ -7,6 +7,8 @@ import { IconSymbol } from "@/components/ui/IconSymbol";
 import TabBarBackground from "@/components/ui/TabBarBackground";
 import { Colors } from "@/constants/Colors";
 import { useColorScheme } from "@/hooks/useColorScheme";
+import AntDesign from "@expo/vector-icons/AntDesign";
+import Foundation from "@expo/vector-icons/Foundation";
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
@@ -41,7 +43,7 @@ export default function TabLayout() {
         options={{
           title: "Screening",
           tabBarIcon: ({ color }) => (
-            <IconSymbol size={28} name="paperplane.fill" color={color} />
+            <AntDesign name="solution1" size={28} color={color} />
           ),
         }}
       />
@@ -50,7 +52,7 @@ export default function TabLayout() {
         options={{
           title: "Results",
           tabBarIcon: ({ color }) => (
-            <IconSymbol size={28} name="checkmark.seal.fill" color={color} />
+            <Foundation name="results" size={24} color={color} />
           ),
         }}
       />
